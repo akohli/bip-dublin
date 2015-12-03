@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <!-- to print add ?print-pdf to query string -->
+  <!-- and save PDF from chrome -->
+  <head>
+    <meta charset="utf-8">
+    <title>Dublin BIP Reading Group First Meeting</title>
+            
+    <meta name="description" content="Dublin BIP Reading Group First Meeting">
+    <meta name="author" content="Aman Kohli">
+                        
+     <title>Dublin BIP Reading Group First Meeting</title>
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+                                            
+     <link rel="stylesheet" href="css/reveal.css">
+     <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/css/reveal.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/css/theme/night.min.css" id="theme">
+
+      <!-- Code syntax highlighting -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/lib/css/zenburn.min.css">
+
+      <!-- Printing and PDF exports -->
+      <script>
+          var link = document.createElement( 'link' );
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/css/print/pdf.css'
+                            : 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/css/print/paper.min.css';
+          document.getElementsByTagName( 'head' )[0].appendChild( link );
+      </script>
+
+			
+       <!--[if lt IE 9]>
+	  <script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+	<section> 
+	    <h2>First Meeting Dublin BIP Meeting Group</h2>
+	    <h3>BIP019 and BIP036</h3>
+	    <h5>Dec 2 2015</h5>
+	    <p> Aman Kohli <a href="http://twitter.com/akohli">@akohli</a> Ronan Lyon, Alex McMahon, Jean-Pierre Rupp and TK </p>
+	</section>
+                
+	<section>
+	    <h2>Welcome!</h2>
+	    <h4>Experienced and newbies like me alike</h4>
+	</section>
+                
+	<section>
+	    <h3>The Two BIPs</h3>
+	    <ul>
+		<li>  <a href="https://github.com/bitcoin/bips/blob/master/bip-0036.mediawiki">[BIP036] Custom Services</a>
+		<li>  <a href="https://github.com/bitcoin/bips/blob/master/bip-0019.mediawiki">[BIP019] M-of-N Standard Transactions (Low SigOp)</a>
+	    </ul>
+	    <h3 align="left"> Both are dormant since 2012, but 36 looking for a new owner</h3>
+	</section>
+	<section>
+	    <h3>Aim of the night</h3>
+	    <ul>
+		<li> Review the BIPs, comments, explore: start with which one?
+		<li> Decide if we want to contribute to them
+		<li> What to do next time?
+	    </ul>
+	</section>
+
+	<section>
+		<h1>BIP 19 - M-of-N Standard Transactions (Low SigOp)</h1>
+	</section>
+                
+	<section>
+	    <h5> <a href="https://github.com/bitcoin/bips/blob/master/bip-0019.mediawiki">BIP 19 - M-of-N Standard Transactions (Low SigOp)</a> Proposal
+	    <h5> <a href="https://bitcointalk.org/index.php?topic=918183.0">Forum Discussion </a>- MultiSig BUT with Bitcoin Addresses NOT Public Keys
+	    <h5> via TK: a clear example of CHECKMULTISIG and P2SH </h5>
+	    <h6> accurately counting sigops, so good: <a href="https://bitcointalk.org/index.php?topic=1166928.0">forum</a></h6>
+	    <h6> and JP:We should try to broadcast one of those TXs in testnet. Sending to a P2SH script with a BIP-19 script, and then redeeming it. </h6>
+	</section>
+
+	<section>
+	    <h1>BIP 36 - Custom Services</h1>
+	</section>
+	
+	<section>
+	    <h5><a href="https://github.com/bitcoin/bips/blob/master/bip-0036.mediawiki">The proposal</a></h5>
+	    <ul>
+		<li> Adds new fields to <a href="https://en.bitcoin.it/wiki/Protocol_documentation#Message_types">version message</a> for client to announce custom services
+		<li> Leaves 64-bit address field untouched
+		<li>  no changes to Bitcoin protocol (but the discussion mentions some possible changes to support different addresses
+		 <li> <a href="[https://en.bitcoin.it/wiki/Version_Handshake">Version HandShake</a> and some more in <a href="https://github.com/btcsuite/btcd/blob/master/wire/doc.go">GO Lang</a>.
+		     <li> <a href="https://github.com/btcsuite/btcd/blob/07406791c9b09beb2b9ca97260017ab1ebe04067/wire/msgversion.go">Msg Header (Visit this, PONG MEssage ref)</a>
+	     </ul>
+                    
+	   </section>
+	<section>
+	    <h5 align="left"><a href="https://en.bitcoin.it/wiki/User:Justmoon/BIP_Draft:_Custom_Service_Discovery">Discussion<a>, <a href="http://twitter.com/justmoon">Stefan Thomas</a> Sept 2013</h5>
+	    <h6> via <a href="https://bitcointalk.org/index.php?topic=265859.msg2847652#msg2847652">bitcoin dev on node discovery of custom services</a></h6>
+	</section>
+	
+	<section>
+	    <h1> Next steps with 19 and 36? </h1>
+	    <h3> 36 looks like most fun to bring to completion </h3>
+	    <h1> Next time? </h1>
+	 </section>
+    </div>
+</div>
+    </body>

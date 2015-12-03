@@ -1,0 +1,7 @@
+* Rough notes from meetup on 2015-12-02, BIPS 19 and 36
+  BIP19 - use p2sh, and remove the language around making this a standard transaction, this is even better
+  bitcore.io playground is awesome, even on a Dvorak keyboard
+  blockstack dht https://github.com/blockstack/dht-mirror
+  BIP36 - good solution, especially with a trusted set of services	
+** some secruity problem overlap with SPV
+ Next time bip 32? 
